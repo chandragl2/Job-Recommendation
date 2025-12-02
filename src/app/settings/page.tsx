@@ -31,7 +31,11 @@ export default function SettingsPage() {
               Account Settings
             </h2>
             <div className="space-y-4">
-              <Input label="Email" type="email" value="user@example.com" />
+              <Input
+                label="Email"
+                type="email"
+                defaultValue="user@example.com"
+              />
               <Button>Update Email</Button>
             </div>
           </Card>
