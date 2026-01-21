@@ -4,11 +4,18 @@
 import { JobRecommendation, UserProfile } from "@/types";
 
 export const MOCK_USER_PROFILE: UserProfile = {
-  id: "1",
-  name: "John Doe",
+  fullName: "John Doe",
   email: "john@example.com",
-  skills: ["React", "JavaScript", "TypeScript", "Node.js", "Tailwind CSS"],
-  experience: [
+  phone: "+62812345678",
+  location: "Jakarta, Indonesia",
+  skills: [
+    { id: "1", name: "React" },
+    { id: "2", name: "JavaScript" },
+    { id: "3", name: "TypeScript" },
+    { id: "4", name: "Node.js" },
+    { id: "5", name: "Tailwind CSS" },
+  ],
+  experiences: [
     {
       id: "1",
       jobTitle: "Senior Frontend Developer",
@@ -34,7 +41,7 @@ export const MOCK_JOBS: JobRecommendation[] = [
     location: "Jakarta, Indonesia",
     level: "senior",
     matchPercentage: 92,
-    requiredSkills: ["React", "TypeScript", "Node.js"],
+    skills: ["React", "TypeScript", "Node.js"],
     description: "Lead our frontend team and build scalable applications",
     salary: "$80,000 - $120,000",
   },
@@ -45,7 +52,7 @@ export const MOCK_JOBS: JobRecommendation[] = [
     location: "Bandung, Indonesia",
     level: "mid",
     matchPercentage: 87,
-    requiredSkills: ["React", "Node.js", "MongoDB"],
+    skills: ["React", "Node.js", "MongoDB"],
     description: "Build and maintain our web application stack",
     salary: "$50,000 - $80,000",
   },
@@ -56,7 +63,7 @@ export const MOCK_JOBS: JobRecommendation[] = [
     location: "Surabaya, Indonesia",
     level: "mid",
     matchPercentage: 85,
-    requiredSkills: ["React", "CSS", "JavaScript"],
+    skills: ["React", "CSS", "JavaScript"],
     description: "Create beautiful and responsive user interfaces",
     salary: "$45,000 - $70,000",
   },
@@ -67,7 +74,7 @@ export const MOCK_JOBS: JobRecommendation[] = [
     location: "Remote",
     level: "junior",
     matchPercentage: 78,
-    requiredSkills: ["JavaScript", "HTML", "CSS"],
+    skills: ["JavaScript", "HTML", "CSS"],
     description: "Join our growing team as a junior developer",
     salary: "$30,000 - $50,000",
   },
@@ -78,7 +85,7 @@ export const MOCK_JOBS: JobRecommendation[] = [
     location: "Jakarta, Indonesia",
     level: "senior",
     matchPercentage: 82,
-    requiredSkills: ["Docker", "AWS", "Node.js"],
+    skills: ["Docker", "AWS", "Node.js"],
     description: "Manage our cloud infrastructure and deployment",
     salary: "$70,000 - $110,000",
   },
